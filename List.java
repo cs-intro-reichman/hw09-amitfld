@@ -53,7 +53,7 @@ public class List {
         while (current != null)
         {
             str.append(current.cp.toString()).append(" ");
-            current = current.next;
+            current = current.cp;
         }
         //removes the trailing space and adds the ')'
         str.deleteCharAt(str.length() - 1).append(")");
@@ -68,7 +68,7 @@ public class List {
         int index = 0;
         while (current != null)
         {
-            if (current.cp.chr == chr)
+            if (current.cp.chr == cr)
             {
                 return index;
             }
